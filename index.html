@@ -38,15 +38,16 @@
   </head>
 
   <body>
-    <header class="max-w-[80%] mx-auto">
-      <nav class="flex justify-between my-12 items-center">
-        <div class="text-center">
+    <header class="max-w-[90%] lg:max-w-[80%] mx-auto">
+      <nav class="flex justify-between mt-4 mb-7 lg:my-12 items-center gap-2">
+        <div class="text-center flex gap-4 items-center">
+          <i class="fa-solid fa-bars text-2xl lg:hidden"></i>
           <h1 class="text-4xl font-extrabold text-first">
             Hockey<span class="text-second">'</span>s
           </h1>
         </div>
-        <div>
-          <ul class="flex gap-11 text-base text-third capitalize ">
+        <div class="hidden lg:block">
+          <ul class="flex gap-11 text-base text-third capitalize">
             <li class="hover:text-second">home</li>
             <li class="hover:text-second">about</li>
             <li class="hover:text-second">pages</li>
@@ -55,8 +56,12 @@
           </ul>
         </div>
         <div class="flex gap-5 items-center">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <button class="bg-second py-4 px-5 rounded-lg text-white text-xl font-bold capitalize">get ticket</button>
+          <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
+          <button
+            class="bg-second py-2 lg:py-4 px-4 lg:px-5 rounded-lg text-white text-[1.125rem] lg:text-xl font-bold capitalize"
+          >
+            get ticket
+          </button>
         </div>
       </nav>
     </header>
