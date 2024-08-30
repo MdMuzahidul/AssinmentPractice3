@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font awasom cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              first: "rgba(19,19,24,1)",
+              second: "rgba(255,66,64,1)",
+              third: "rgba(66,66,71,1)",
+            },
+          },
+        },
+      };
+    </script>
 
-    <title>Document</title>
-</head>
+    <title>Hockey’s</title>
+  </head>
 
-<body>
-
-</body>
-
+  <body>
+    <header class="max-w-[80%] mx-auto">
+      <nav class="flex justify-between my-12 items-center">
+        <div class="text-center">
+          <h1 class="text-4xl font-extrabold text-first">
+            Hockey<span class="text-second">'</span>s
+          </h1>
+        </div>
+        <div>
+          <ul class="flex gap-11 text-base text-third capitalize ">
+            <li class="hover:text-second">home</li>
+            <li class="hover:text-second">about</li>
+            <li class="hover:text-second">pages</li>
+            <li class="hover:text-second">blog</li>
+            <li class="hover:text-second">contact us</li>
+          </ul>
+        </div>
+        <div class="flex gap-5 items-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="bg-second py-4 px-5 rounded-lg text-white text-xl font-bold capitalize">get ticket</button>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
