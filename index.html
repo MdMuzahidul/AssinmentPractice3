@@ -78,13 +78,24 @@
         </div>
       </nav>
       <div class="mb-8 lg:mb-24">
-        <div>
+        <div class="relative">
+          <div class="hidden lg:block absolute bottom-20 right-8">
+            <div class="border p-8 bg-first inline-block rounded-2xl space-y-3">
+              <h3 class="text-white text-2xl font-extrabold">
+                Meet all the heroes from the field
+              </h3>
+              <p class="text-[rgba(255,255,255,0.6)] max-w-[520px]">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
           <div class="carousel w-full rounded-3xl">
             <div id="item1" class="carousel-item w-full h-[250px] lg:h-[650px]">
               <img src="./Images/1.png" class="w-full h-full" />
             </div>
             <div id="item2" class="carousel-item w-full h-[250px] lg:h-[650px]">
-              <img src="./Images/1.png" class="w-full h-full" />
+              <img src="./Images/2.png" class="w-full h-full" />
             </div>
             <div id="item3" class="carousel-item w-full h-[250px] lg:h-[650px]">
               <img src="./Images/1.png" class="w-full h-full" />
@@ -100,7 +111,7 @@
             <a href="#item4" class="btn btn-xs">4</a>
           </div>
         </div>
-        <div>
+        <div class="block lg:hidden">
           <div class="border p-8 bg-first inline-block rounded-2xl space-y-3">
             <h3 class="text-white text-2xl font-extrabold">
               Meet all the heroes from the field
@@ -129,10 +140,14 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8 lg:mb-24">
           <div>
-            <div
-              class="h-[120px] w-[120px] rounded-full border-8 border-green-700 flex items-center justify-center text-3xl font-extrabold mx-auto mb-6"
-            >
-              87%
+            <div class="flex justify-center items-center mb-6">
+              <div
+                class="radial-progress text-2xl text-[rgba(255,66,64,1)] rotate-180"
+                style="--value: 87; --size: 8rem; --thickness: 0.8rem"
+                role="progressbar"
+              >
+                <p class="text-first text-3xl font-semibold rotate-180">87%</p>
+              </div>
             </div>
             <div>
               <h3 class="text-xl font-semibold text-first text-center mb-4">
@@ -144,10 +159,14 @@
             </div>
           </div>
           <div>
-            <div
-              class="h-[120px] w-[120px] rounded-full border-8 border-green-700 flex items-center justify-center text-3xl font-extrabold mx-auto mb-6"
-            >
-              87%
+            <div class="flex justify-center items-center mb-6">
+              <div
+                class="radial-progress text-2xl text-[rgba(73,210,147,1)] rotate-180"
+                style="--value: 95; --size: 8rem; --thickness: 0.8rem"
+                role="progressbar"
+              >
+                <p class="text-first text-3xl font-semibold rotate-180">95%</p>
+              </div>
             </div>
             <div>
               <h3 class="text-xl font-semibold text-first text-center mb-4">
@@ -159,10 +178,14 @@
             </div>
           </div>
           <div>
-            <div
-              class="h-[120px] w-[120px] rounded-full border-8 border-green-700 flex items-center justify-center text-3xl font-extrabold mx-auto mb-6"
-            >
-              87%
+            <div class="flex justify-center items-center mb-6">
+              <div
+                class="radial-progress text-2xl text-[rgba(255,181,70,1)] rotate-180"
+                style="--value: 90; --size: 8rem; --thickness: 0.8rem"
+                role="progressbar"
+              >
+                <p class="text-first text-3xl font-semibold rotate-180">90%</p>
+              </div>
             </div>
             <div>
               <h3 class="text-xl font-semibold text-first text-center mb-4">
@@ -174,10 +197,14 @@
             </div>
           </div>
           <div>
-            <div
-              class="h-[120px] w-[120px] rounded-full border-8 border-green-700 flex items-center justify-center text-3xl font-extrabold mx-auto mb-6"
-            >
-              87%
+            <div class="flex justify-center items-center mb-6">
+              <div
+                class="radial-progress text-2xl text-[rgba(76,141,241,1)] rotate-180"
+                style="--value: 80; --size: 8rem; --thickness: 0.8rem"
+                role="progressbar"
+              >
+                <p class="text-first text-3xl font-semibold rotate-180">80%</p>
+              </div>
             </div>
             <div>
               <h3 class="text-xl font-semibold text-first text-center mb-4">
@@ -726,7 +753,68 @@
       </section>
     </main>
     <footer class="bg-[rgba(19,19,24,1)]">
-      <div class="max-w-[90%] lg:max-w-[80%] mx-auto></div>
+      <div class="max-w-[90%] lg:max-w-[80%] mx-auto">
+        <div class="py-24 grid grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-36">
+          <div class="col-span-2 text-center lg:text-left w-full">
+            <h3 class="text-white capitalize text-3xl font-extrabold mb-4">
+              get in touch
+            </h3>
+            <p class="text-[rgba(255,255,255,0.6)] mb-6">
+              Dit amet consectetur. Condimentum adipiscing aliquam turpis
+              placerat dolor. Purus urna in sit nullam proin.
+            </p>
+            <div class="text-[rgba(255,255,255,0.6)] space-y-4">
+              <div
+                class="flex gap-3 items-center justify-center lg:justify-start"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <p>hockeys@support.com</p>
+              </div>
+              <div
+                class="flex gap-3 items-center justify-center lg:justify-start"
+              >
+                <i class="fa-solid fa-phone"></i>
+                <p>(+62) 123-321-543</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="text-white capitalize text-xl font-bold mb-7">
+              company
+            </h3>
+            <ul class="text-[rgba(255,255,255,0.6)] space-y-4 capitalize">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">leadership</a></li>
+              <li><a href="#">carrers</a></li>
+              <li><a href="#">news & artical</a></li>
+              <li><a href="#">legal notics</a></li>
+            </ul>
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="text-white capitalize text-xl font-bold mb-7">
+              supprot
+            </h3>
+            <ul class="text-[rgba(255,255,255,0.6)] space-y-4 capitalize">
+              <li><a href="#">help center</a></li>
+              <li><a href="#">FQA</a></li>
+              <li><a href="#">ticket support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-span-2 lg:col-span-1 text-center lg:text-left">
+            <h3 class="text-white capitalize text-xl font-bold mb-7">
+              services
+            </h3>
+            <ul class="text-[rgba(255,255,255,0.6)] space-y-4 capitalize">
+              <li><a href="#">academy</a></li>
+              <li><a href="#">group lesson</a></li>
+              <li><a href="#">Private lesson</a></li>
+              <li><a href="#">hockeys for kids</a></li>
+              <li><a href="#">hockeys for adult</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
